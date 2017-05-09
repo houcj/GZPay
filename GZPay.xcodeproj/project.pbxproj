@@ -14,6 +14,11 @@
 		CE81B51A1EC04E1000B0ACFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE81B5181EC04E1000B0ACFC /* LaunchScreen.storyboard */; };
 		CE81B5251EC04E1000B0ACFC /* GZPayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B5241EC04E1000B0ACFC /* GZPayTests.swift */; };
 		CE81B5301EC04E1000B0ACFC /* GZPayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B52F1EC04E1000B0ACFC /* GZPayUITests.swift */; };
+		CE81B5441EC05CA800B0ACFC /* TelephoneChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B5431EC05CA800B0ACFC /* TelephoneChargeViewController.swift */; };
+		CE81B5461EC05CCE00B0ACFC /* ReturnMoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B5451EC05CCE00B0ACFC /* ReturnMoneyViewController.swift */; };
+		CE81B5481EC05CE400B0ACFC /* TransactionRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B5471EC05CE400B0ACFC /* TransactionRecordViewController.swift */; };
+		CE81B54D1EC0744100B0ACFC /* ElectricChargeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B54C1EC0744100B0ACFC /* ElectricChargeViewController.swift */; };
+		CE81B5511EC0755F00B0ACFC /* HomeViewBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81B5501EC0755F00B0ACFC /* HomeViewBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		CE81B52B1EC04E1000B0ACFC /* GZPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GZPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE81B52F1EC04E1000B0ACFC /* GZPayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GZPayUITests.swift; sourceTree = "<group>"; };
 		CE81B5311EC04E1000B0ACFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE81B5431EC05CA800B0ACFC /* TelephoneChargeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelephoneChargeViewController.swift; sourceTree = "<group>"; };
+		CE81B5451EC05CCE00B0ACFC /* ReturnMoneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReturnMoneyViewController.swift; sourceTree = "<group>"; };
+		CE81B5471EC05CE400B0ACFC /* TransactionRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRecordViewController.swift; sourceTree = "<group>"; };
+		CE81B54C1EC0744100B0ACFC /* ElectricChargeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElectricChargeViewController.swift; sourceTree = "<group>"; };
+		CE81B5501EC0755F00B0ACFC /* HomeViewBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +87,10 @@
 		CE81B5031EC04E0F00B0ACFC = {
 			isa = PBXGroup;
 			children = (
+				CE81B5401EC05AF300B0ACFC /* GZElectricCharge */,
+				CE81B53F1EC05ACA00B0ACFC /* GZTelephoneCharge */,
+				CE81B53E1EC05AC100B0ACFC /* GZReturnedMoney */,
+				CE81B53D1EC05AB200B0ACFC /* GZTransactionRecord */,
 				CE81B50E1EC04E1000B0ACFC /* GZPay */,
 				CE81B5231EC04E1000B0ACFC /* GZPayTests */,
 				CE81B52E1EC04E1000B0ACFC /* GZPayUITests */,
@@ -123,6 +137,63 @@
 				CE81B5311EC04E1000B0ACFC /* Info.plist */,
 			);
 			path = GZPayUITests;
+			sourceTree = "<group>";
+		};
+		CE81B53D1EC05AB200B0ACFC /* GZTransactionRecord */ = {
+			isa = PBXGroup;
+			children = (
+				CE81B5471EC05CE400B0ACFC /* TransactionRecordViewController.swift */,
+			);
+			path = GZTransactionRecord;
+			sourceTree = "<group>";
+		};
+		CE81B53E1EC05AC100B0ACFC /* GZReturnedMoney */ = {
+			isa = PBXGroup;
+			children = (
+				CE81B5451EC05CCE00B0ACFC /* ReturnMoneyViewController.swift */,
+			);
+			path = GZReturnedMoney;
+			sourceTree = "<group>";
+		};
+		CE81B53F1EC05ACA00B0ACFC /* GZTelephoneCharge */ = {
+			isa = PBXGroup;
+			children = (
+				CE81B5431EC05CA800B0ACFC /* TelephoneChargeViewController.swift */,
+			);
+			path = GZTelephoneCharge;
+			sourceTree = "<group>";
+		};
+		CE81B5401EC05AF300B0ACFC /* GZElectricCharge */ = {
+			isa = PBXGroup;
+			children = (
+				CE81B54B1EC0744100B0ACFC /* controller */,
+				CE81B54A1EC0743800B0ACFC /* view */,
+				CE81B5491EC0743000B0ACFC /* model */,
+			);
+			path = GZElectricCharge;
+			sourceTree = "<group>";
+		};
+		CE81B5491EC0743000B0ACFC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CE81B54A1EC0743800B0ACFC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CE81B5501EC0755F00B0ACFC /* HomeViewBtn.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CE81B54B1EC0744100B0ACFC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE81B54C1EC0744100B0ACFC /* ElectricChargeViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE81B5511EC0755F00B0ACFC /* HomeViewBtn.swift in Sources */,
+				CE81B5461EC05CCE00B0ACFC /* ReturnMoneyViewController.swift in Sources */,
 				CE81B5121EC04E1000B0ACFC /* ViewController.swift in Sources */,
 				CE81B5101EC04E1000B0ACFC /* AppDelegate.swift in Sources */,
+				CE81B54D1EC0744100B0ACFC /* ElectricChargeViewController.swift in Sources */,
+				CE81B5481EC05CE400B0ACFC /* TransactionRecordViewController.swift in Sources */,
+				CE81B5441EC05CA800B0ACFC /* TelephoneChargeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
